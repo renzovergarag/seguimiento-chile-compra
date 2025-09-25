@@ -113,12 +113,12 @@ export class TaskScheduler {
      * Inicia las tareas programadas
      */
     start(): void {
-        if (this.dailyExtractionTask && !this.dailyExtractionTask.getStatus()) {
+        if (this.dailyExtractionTask) {
             this.dailyExtractionTask.start();
             console.log("▶️ Extracción diaria iniciada");
         }
 
-        if (this.cleanupTask && !this.cleanupTask.getStatus()) {
+        if (this.cleanupTask) {
             this.cleanupTask.start();
             console.log("▶️ Limpieza semanal iniciada");
         }
@@ -184,8 +184,8 @@ export class TaskScheduler {
     } {
         return {
             isRunning: this.isRunning,
-            dailyTaskActive: this.dailyExtractionTask?.getStatus() || false,
-            cleanupTaskActive: this.cleanupTask?.getStatus() || false,
+            dailyTaskActive: this.dailyExtractionTask !== null,
+            cleanupTaskActive: this.cleanupTask !== null,
             nextDailyExecution: this.getNextExecutionTime(process.env.CRON_SCHEDULE || "0 20 * * *"),
         };
     }
