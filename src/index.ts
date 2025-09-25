@@ -15,11 +15,11 @@ import { createExtractionRoutes, createStatsRoutes, createHealthRoutes } from ".
  */
 class ChileCompraMonitorApp {
     private app: express.Application;
-    private databaseService: DatabaseService;
-    private apiService: ChileCompraApiService;
-    private emailService: EmailService;
-    private extractionService: ExtractionService;
-    private taskScheduler: TaskScheduler;
+    private databaseService!: DatabaseService;
+    private apiService!: ChileCompraApiService;
+    private emailService!: EmailService;
+    private extractionService!: ExtractionService;
+    private taskScheduler!: TaskScheduler;
 
     constructor() {
         this.app = express();
@@ -126,7 +126,7 @@ class ChileCompraMonitorApp {
      */
     private setupErrorHandling(): void {
         // Manejo de rutas no encontradas
-        this.app.use("*", (req, res) => {
+        this.app.use((req, res, next) => {
             res.status(404).json({
                 success: false,
                 message: "Endpoint no encontrado",
