@@ -12,7 +12,7 @@ const transporteConfig: EmprendimientoConfig = {
     id: "transporte",
     name: "Servicios de Transporte",
     description: "Emprendimiento de transporte con bus para 15 personas",
-    emailRecipients: [process.env.EMAIL_TO || "usuario@ejemplo.com"],
+    emailRecipients: ["renzovergarag@gmail.com", "loretobarrera.tts@gmail.com", "rodrigorojasreyes2802@gmail.com"],
     endpoints: [
         {
             name: "Servicios de Transporte General",
@@ -61,7 +61,7 @@ const softwareConfig: EmprendimientoConfig = {
     id: "software",
     name: "Servicios de Software y Tecnología",
     description: "Emprendimiento de software, asesorías y venta de licencias",
-    emailRecipients: [process.env.EMAIL_TO || "usuario@ejemplo.com"],
+    emailRecipients: ["renzovergarag@gmail.com", "anibal.lufi.a@gmail.com", "ptudela@neurox.cl"],
     endpoints: [
         {
             name: "Búsqueda por Software",
