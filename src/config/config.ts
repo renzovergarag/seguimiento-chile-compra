@@ -29,8 +29,8 @@ export const config = {
 
     // Configuración de email
     email: {
-        serviceUrl: process.env.EMAIL_SERVICE_URL || "http://noreply.neurox.cl/api/email/send",
-        from: process.env.EMAIL_FROM || "ofertas@chilecompra.local",
+        serviceUrl: process.env.EMAIL_SERVICE_URL || "https://noreply.neurox.cl/api/email/send",
+        from: process.env.EMAIL_FROM || "notificaciones@no-reply.neurox.cl",
         to: process.env.EMAIL_TO || "usuario@ejemplo.com",
     },
 
