@@ -100,7 +100,7 @@ export interface ExtraccionSummary {
  * Configuración de email
  */
 export interface EmailConfig {
-    from: string;
+    from?: string;
     to: string | string[];
     subject: string;
     html: string;
