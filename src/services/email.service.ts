@@ -189,11 +189,9 @@ export class EmailService {
             const ofertasConEnlaces = this.prepareOfertasForEmail(ofertas);
 
             const emailConfig: EmailConfig = {
-                from: process.env.EMAIL_FROM || "ofertas@chilecompra.local",
                 to: recipients,
                 subject: `📊 Reporte Diario de Ofertas - ${emprendimiento} (${fechaReporte})`,
                 html: this.generateEmailHTML(ofertasConEnlaces, emprendimiento, fechaReporte),
-                replyTo: process.env.EMAIL_FROM || "ofertas@chilecompra.local",
             };
 
             console.log(`📧 Enviando reporte por email a: ${recipients.join(", ")}`);
@@ -271,11 +269,9 @@ export class EmailService {
       `;
 
             const emailConfig: EmailConfig = {
-                from: process.env.EMAIL_FROM || "ofertas@chilecompra.local",
                 to: recipients,
                 subject: `⚠️ Error en Monitoreo - ${emprendimiento}`,
                 html: errorHTML,
-                replyTo: process.env.EMAIL_FROM || "ofertas@chilecompra.local",
             };
 
             console.log(`🚨 Enviando notificación de error por email...`);
@@ -313,7 +309,6 @@ export class EmailService {
       `;
 
             const emailConfig: EmailConfig = {
-                from: process.env.EMAIL_FROM || "test@chilecompra.local",
                 to: recipient,
                 subject: "✅ Prueba de Servicio de Email - Chile Compra Monitor",
                 html: testHTML,
