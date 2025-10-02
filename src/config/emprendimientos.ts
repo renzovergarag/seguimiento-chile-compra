@@ -9,14 +9,14 @@ import { EmprendimientoConfig } from "../models/types";
  * Configuración para el emprendimiento de Transporte
  */
 const transporteConfig: EmprendimientoConfig = {
-    id: "transporte",
-    name: "Servicios de Transporte",
+    id: "alfaTour",
+    name: "Alta Tour",
     description: "Emprendimiento de transporte con bus para 15 personas",
     emailRecipients: ["renzovergarag@gmail.com", "loretobarrera.tts@gmail.com", "rodrigorojasreyes2802@gmail.com"],
     endpoints: [
         {
-            name: "Servicios de Transporte General",
-            description: "Servicios de transporte en general",
+            name: "Vehículos para turismo",
+            description: "Servicios de Vehículos para turismo",
             params: {
                 category: "25101500",
                 status: 2,
@@ -24,8 +24,8 @@ const transporteConfig: EmprendimientoConfig = {
             },
         },
         {
-            name: "Servicios de Turismo y Viajes",
-            description: "Servicios relacionados con turismo y viajes",
+            name: "Transporte de carga por carretera",
+            description: "Servicios de transporte de carga por carretera",
             params: {
                 category: "78101800",
                 status: 2,
@@ -33,8 +33,8 @@ const transporteConfig: EmprendimientoConfig = {
             },
         },
         {
-            name: "Transporte de Pasajeros",
-            description: "Servicios específicos de transporte de pasajeros",
+            name: "Transporte de equipo médico y traslado de productos",
+            description: "Servicios de Transporte de equipo médico y traslado de productos",
             params: {
                 category: "42192400",
                 status: 2,
@@ -42,11 +42,11 @@ const transporteConfig: EmprendimientoConfig = {
             },
         },
         {
-            name: "Servicios de Transporte Región V",
-            description: "Servicios de transporte en la Región de Valparaíso",
+            name: "Transporte de pasajeros por carretera",
+            description: "Servicios de Transporte de pasajeros por carretera",
             params: {
                 category: "78111800",
-                region: "5",
+                // region: "5",
                 status: 2,
                 order_by: "recent",
             },
@@ -58,8 +58,8 @@ const transporteConfig: EmprendimientoConfig = {
  * Configuración para el emprendimiento de Software
  */
 const softwareConfig: EmprendimientoConfig = {
-    id: "software",
-    name: "Servicios de Software y Tecnología",
+    id: "neurox",
+    name: "Neuro-X",
     description: "Emprendimiento de software, asesorías y venta de licencias",
     emailRecipients: ["renzovergarag@gmail.com", "anibal.lufi.a@gmail.com", "ptudela@neurox.cl"],
     endpoints: [
@@ -73,8 +73,8 @@ const softwareConfig: EmprendimientoConfig = {
             },
         },
         {
-            name: "Inteligencia Artificial",
-            description: "Ofertas relacionadas con inteligencia artificial",
+            name: "Búsqueda por Inteligencia Artificial",
+            description: 'Ofertas que contienen la palabra "artificial"',
             params: {
                 keywords: "artificial",
                 status: 2,
@@ -82,8 +82,8 @@ const softwareConfig: EmprendimientoConfig = {
             },
         },
         {
-            name: "Desarrollo de Software",
-            description: "Servicios de desarrollo de software",
+            name: "Sistemas de extracción de información",
+            description: "Servicios de Sistemas de extracción de información",
             params: {
                 category: "81111900",
                 status: 2,
@@ -91,8 +91,8 @@ const softwareConfig: EmprendimientoConfig = {
             },
         },
         {
-            name: "Servicios de Informática",
-            description: "Servicios generales de informática",
+            name: "Ingeniería en computación e informática",
+            description: "Servicios de Ingeniería en computación e informática",
             params: {
                 category: "81111500",
                 status: 2,
@@ -100,8 +100,8 @@ const softwareConfig: EmprendimientoConfig = {
             },
         },
         {
-            name: "Servicios de Sistemas",
-            description: "Servicios de sistemas informáticos",
+            name: "Programadores informáticos",
+            description: "Servicios de programación informática",
             params: {
                 category: "81111600",
                 status: 2,
@@ -109,8 +109,8 @@ const softwareConfig: EmprendimientoConfig = {
             },
         },
         {
-            name: "Software de Aplicación",
-            description: "Software de aplicaciones específicas",
+            name: "Software de intercambio de información",
+            description: "Servicio de Software de intercambio de información",
             params: {
                 category: "43233500",
                 status: 2,
@@ -118,8 +118,8 @@ const softwareConfig: EmprendimientoConfig = {
             },
         },
         {
-            name: "Servicios de Base de Datos",
-            description: "Servicios relacionados con bases de datos",
+            name: "Sistemas de información",
+            description: "Servicios de Sistemas de información",
             params: {
                 category: "81111700",
                 status: 2,
@@ -127,8 +127,8 @@ const softwareConfig: EmprendimientoConfig = {
             },
         },
         {
-            name: "Servicios de Consultoría TI",
-            description: "Servicios de consultoría en tecnologías de información",
+            name: "Contratistas en tecnologías de la información",
+            description: "Servicios de Contratistas en tecnologías de la información",
             params: {
                 category: "80111800",
                 status: 2,
@@ -136,8 +136,8 @@ const softwareConfig: EmprendimientoConfig = {
             },
         },
         {
-            name: "Software de Sistema",
-            description: "Software de sistema y utilidades",
+            name: "Software de edición y creación de contenidos",
+            description: "Software de edición y creación de contenidos",
             params: {
                 category: "43232100",
                 status: 2,
@@ -145,8 +145,8 @@ const softwareConfig: EmprendimientoConfig = {
             },
         },
         {
-            name: "Software de Desarrollo",
-            description: "Herramientas de desarrollo de software",
+            name: "Software de planificación de recursos empresariales (ERP) y contabilidad financiera",
+            description: "Software de planificación de recursos empresariales (ERP) y contabilidad financiera",
             params: {
                 category: "43231600",
                 status: 2,
